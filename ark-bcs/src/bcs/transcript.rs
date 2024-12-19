@@ -141,7 +141,7 @@ where
         }
     }
 
-    /// Register a virtual oracle specfied by coset evaluator.
+    /// Register a virtual oracle specified by coset evaluator.
     /// * `coset_query_evaluator`: a function that takes a coset and constituent
     ///   oracles, and return query responses
     /// * `evaluation_on_domain`: evaluation of this virtual round on evaluation
