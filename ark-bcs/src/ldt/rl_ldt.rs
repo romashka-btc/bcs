@@ -98,7 +98,7 @@ impl<F: PrimeField + Absorb> LDT<F> for LinearCombinationLDT<F> {
                 .map(|_| FieldElementSize::Full)
                 .collect::<Vec<_>>(),
         );
-        transcript.submit_verifier_current_round(namespace, iop_trace!("ldt random coefficeints"));
+        transcript.submit_verifier_current_round(namespace, iop_trace!("ldt random coefficients"));
 
         let mut result_codewords = (0..param.domain.size())
             .map(|_| F::zero())
